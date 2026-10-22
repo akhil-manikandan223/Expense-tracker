@@ -1,0 +1,17 @@
+@if (error()) {
+  <p role="alert">{{ error() }}</p>
+} @else {
+  <ag-grid-angular
+    class="category-grid"
+    [theme]="theme"
+    [rowData]="categories()"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [loading]="loading()"
+    [pagination]="true"
+    [paginationPageSize]="10"
+    [paginationPageSizeSelector]="[10, 20, 50]"
+    domLayout="autoHeight"
+    overlayNoRowsTemplate="No categories found."
+  />
+}

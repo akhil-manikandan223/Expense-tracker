@@ -1,0 +1,17 @@
+# Repository-wide ignores. Project-specific rules live in
+# Exp-tracker/.gitignore (Angular) and ExpTracker/.gitignore (.NET).
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Editors
+.vs/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
